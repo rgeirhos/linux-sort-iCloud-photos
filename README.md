@@ -9,7 +9,7 @@
 
 2. Extract the `.zip` file(s) and locate the `Photos/` directory. Then, simply execute (for each of the extracted directories):
 
-```shell
+```bash
 python3 sort_photos.py -d ./path/to/Photos/ --convert-HEIC-to-JPG
 ```
 
@@ -21,6 +21,6 @@ Tested on Linux (Ubuntu 20.04 LTS) with Python3 using standard Python libraries 
 
 If and only if you would like the script to convert `.HEIC` photos to `.JPG`, the `libheif-examples` library is required and can be installed as follows:
 
-```shell
+```bash
 sudo apt install libheif-examples
 ```
