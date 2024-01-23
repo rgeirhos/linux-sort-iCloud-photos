@@ -18,11 +18,11 @@ args = parser.parse_args()
 
 PHOTO_INDEX = {} # mapping from filename to Img object
 
-TIME_IDX = 4
-AM_PM_IDX = 5
-DAY_IDX = 2
-MONTH_IDX = 1
-YEAR_IDX = 3
+TIME_IDX = 8
+AM_PM_IDX = 9
+DAY_IDX = 6
+MONTH_IDX = 5
+YEAR_IDX = 7
 
 MONTH_DICT = {
     "January": 1,
@@ -127,3 +127,4 @@ if __name__ == "__main__":
     build_index(directory = args.directory)
     sort_images(directory = args.directory,
                 convert_HEIC_to_JPG = args.convert_HEIC_to_JPG)
+
