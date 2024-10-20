@@ -117,8 +117,11 @@ def sort_images(directory, convert_HEIC_to_JPG):
             new_filepath = os.path.join(directory, new_filename)
             os.rename(old_filepath, new_filepath)
 
-            if convert_HEIC_to_JPG and new_filename.endswith(".HEIC"):
+            if convert_HEIC_to_JPG and new_filename.endswith(".HEIC"): # upper case
                 os.system(f"heif-convert -q 100 {new_filepath} {new_filepath.replace('.HEIC', '.JPG')} > /dev/null")
+                os.remove(new_filepath)
+            elif convert_HEIC_to_JPG and new_filename.endswith(".heic"): # lower case
+                os.system(f"heif-convert -q 100 {new_filepath} {new_filepath.replace('.heic', '.JPG')} > /dev/null")
                 os.remove(new_filepath)
 
 
