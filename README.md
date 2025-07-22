@@ -6,7 +6,7 @@ If you'd like to download your iCloud photos to Linux and you thought they'd be 
 
 ## Steps
 
-1. At https://privacy.apple.com/, log in and click on "Obtain a copy of your data". Select iCloud Photos and choose the desired file size (e.g. 2 GB). Complete request and download the data once you receive the notification email.
+1. At https://privacy.apple.com/, log in and click on "Obtain a copy of your data". Select iCloud Photos and choose the desired file size (e.g. 2 GB). Complete request and download the data once you receive the notification email (usually within a couple of days).
 (Why not simply download the photos directly from iCloud photos? Unfortunately this approach will only get you the unsorted photos with a cryptic name but not the metadata - like dates - required for sorting them.)
 
 2. Extract the `.zip` file(s) and locate the `Photos/` directory. Then, simply execute (for each of the extracted directories):
